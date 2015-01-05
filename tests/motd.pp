@@ -1,0 +1,1 @@
+include ::speedrun::motd
