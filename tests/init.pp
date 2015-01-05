@@ -1,0 +1,3 @@
+class { '::speedrun':
+  user => 'ben'
+}
