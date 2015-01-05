@@ -38,7 +38,7 @@ fi
 
 # Start standalone Puppet run
 puppet module install ./pkg/benfairless-speedrun-${MODULE_VERSION}.tar.gz | style
-puppet apply tests/master.pp | style
+puppet apply tests/init.pp | style
 
 # Ensure that machine resolves 'puppet' to localhost
 sed -i -e 's/\(127.0.0.1.*\)puppet/\1  puppet/' /etc/hosts
