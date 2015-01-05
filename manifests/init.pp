@@ -13,13 +13,7 @@
 class speedrun (
   $user = undef
 ){
-  file { '/etc/motd':
-    ensure  => present,
-    owner   => 'root',
-    group   => 'root',
-    mode    => '0660',
-    content => template('speedrun/motd.erb')
-  }
+  include speedrun::motd
   if $user != undef {
     user { 'username':
       ensure => present,
