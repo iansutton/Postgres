@@ -2,7 +2,7 @@
   "name": "benfairless-speedrun",
   "version": "0.1.0",
   "author": "Ben Fairless",
-  "summary": "Role module for configuring Puppet and Puppet Master installations",
+  "summary": "Example module for Puppet development",
   "license": "MIT License",
   "source": "https://github.com/benfairless/speedrun-puppet",
   "project_page": "https://github.com/benfairless/speedrun-puppet",
