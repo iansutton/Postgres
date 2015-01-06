@@ -34,12 +34,17 @@ desc "Run lint tasks against module"
 Rake::Task[:lint].clear # https://github.com/rodjek/puppet-lint/issues/331
 PuppetLint::RakeTask.new :lint do |config|
   config.fail_on_warnings = true
-  #config.relative = true
   config.ignore_paths  = exclude_paths
   config.disable_checks = [
     '80chars',
   ]
   config.log_format = "%{path}:%{linenumber}:%{check}:%{KIND}:%{message}"
+
+  # Only check autoloader if directory name is the same as the module
+  if (File.expand_path(__FILE__).split('/')[-2] != 'speedrun')
+    puts "WARNING: Autoload check disabled due to directory name mismatch"
+    config.disable_checks.push('autoloader_layout')
+  end
 end
 
 # Syntax task
