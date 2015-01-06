@@ -1,8 +1,13 @@
 require 'rake'
+require 'json'
 require 'rspec/core/rake_task'
 require 'puppetlabs_spec_helper/rake_tasks'
 require 'puppet-syntax/tasks/puppet-syntax'
 require 'puppet-lint/tasks/puppet-lint'
+
+# Read metadata for module
+metadata = JSON.parse(File.read('metadata.json'))
+module_shortname = metadata['name'].gsub(/^.*-/,'')
 
 desc "Run all RSpec code examples"
 RSpec::Core::RakeTask.new(:rspec) do |t|
@@ -41,7 +46,7 @@ PuppetLint::RakeTask.new :lint do |config|
   config.log_format = "%{path}:%{linenumber}:%{check}:%{KIND}:%{message}"
 
   # Only check autoloader if directory name is the same as the module
-  if (File.expand_path(__FILE__).split('/')[-2] != 'speedrun')
+  if (File.expand_path(__FILE__).split('/')[-2] != module_shortname)
     puts "WARNING: Autoload check disabled due to directory name mismatch"
     config.disable_checks.push('autoloader_layout')
   end
