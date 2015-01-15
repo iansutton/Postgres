@@ -12,7 +12,7 @@ Now to test it.
 
 5. Run bundel install to install the ruby gems requied to build and test your profile code.
 6. Run the build script - this will package up your profile in to an installable module.
-7. bring up the vagrant vm.
+7. Bring up the vagrant vm.
 
 ```shell
 bundel install
@@ -26,6 +26,7 @@ If all is well the vagrant vm will come up with out error - you can then ssh in 
 
 NB if you need to run the test again you will need to exit and destroy the vagrant vm, rerun build.sh and then re-run vagrant up.
 
+For an example of a wroking module check out the 'ntp' branch of this repo.
 
 Manifest layout:
 
