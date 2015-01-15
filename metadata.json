@@ -9,12 +9,12 @@
   "issues_url": "https://github.com/stevechambers/puppet-profile-dev/issues",
   "dependencies": [
     {
-      "name": "puppetlabs-stdlib",
-      "version_requirement": ">= 4.4.0"
+      "name": "<AUTHOUR/MODULE>",
+      "version_requirement": ">= <VERSION_NUMBER>"
     },
     {
-      "name": "puppetlabs-ntp",
-      "version_requirement": ">= 3.3.0"
+      "name": "<AUTHOUR/MODULE>",
+      "version_requirement": ">= <VERSION_NUMBER>"
     }
   ]
 }
