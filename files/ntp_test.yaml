@@ -1,7 +1,0 @@
----
-profiles::ntp::ntp_server_array:
-  - '2.uk.pool.ntp.org'
-  - '3.uk.pool.ntp.org'
-profiles::ntp::ntp_restrict_array:
-  - '127.0.1.0'
-  - '127.0.1.1'
