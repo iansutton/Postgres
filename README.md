@@ -2,9 +2,11 @@ puppet-profile-dev
 ==================
 
 1. Clone git repo
-2. Write new profile code in the 'manifests' folder (see guide below)
-3. Add test code to the 'tests' folder (see guide below)
-4. If you wish to test hiera lookups add an appropriate yaml file to the 'files' folder and ensure that it is referenced in files/hiera.yaml
+2. Write new profile code in the 'manifests' folder (see layout below)
+3. Add test code to the 'tests' folder (see layout below)
+4. Add the details of any modules that your profile is deppendant on to the 'metadata.json' file.
+5. If you wish to test hiera lookups add an appropriate yaml file to the 'files' folder and ensure that it is referenced in files/hiera.yaml
+6. If your profile requires any templates place them in the templates folder.
 
 Now to test it.
 
