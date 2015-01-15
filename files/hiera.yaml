@@ -1,5 +1,5 @@
 :hierarchy:
-  - ntp_test
+  - <REFERENCE_TEST_HIERA_DATA_HERE>
 
 :backends:
   - yaml
