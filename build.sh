@@ -41,7 +41,7 @@ bundle install --deployment \
 # Install gems
 #bundle install | style
 
-if [ -f pkg/benfairless-speedrun-${MODULE_VERSION}.tar.gz ]; then
+if [ -f pkg/profiles-${MODULE_VERSION}.tar.gz ]; then
   echo "Cleaning old module build" | style
   bundle exec rake clean           #| style
 fi

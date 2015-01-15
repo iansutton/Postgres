@@ -1,16 +1,20 @@
 {
-  "name": "benfairless-speedrun",
+  "name": "beta-profiles",
   "version": "0.1.0",
-  "author": "Ben Fairless",
-  "summary": "Example module for Puppet development",
+  "author": "beta",
+  "summary": "Basic environment for developing and testing puppet profiles",
   "license": "MIT License",
-  "source": "https://github.com/benfairless/speedrun-puppet",
-  "project_page": "https://github.com/benfairless/speedrun-puppet",
-  "issues_url": "https://github.com/benfairless/speedrun-puppet/issues",
+  "source": "https://github.com/stevechambers/puppet-profile-dev",
+  "project_page": "https://github.com/stevechambers/puppet-profile-devt",
+  "issues_url": "https://github.com/stevechambers/puppet-profile-dev/issues",
   "dependencies": [
     {
       "name": "puppetlabs-stdlib",
       "version_requirement": ">= 4.4.0"
+    },
+    {
+      "name": "puppetlabs-ntp",
+      "version_requirement": ">= 3.3.0"
     }
   ]
 }

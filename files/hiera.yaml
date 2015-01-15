@@ -1,0 +1,8 @@
+:hierarchy:
+  - ntp_test
+
+:backends:
+  - yaml
+
+:yaml:
+  :datadir: /vagrant/files

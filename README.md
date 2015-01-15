@@ -1,2 +1,2 @@
-speedrun-puppet
-===============
+puppet-profile-dev
+==================
