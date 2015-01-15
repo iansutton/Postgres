@@ -41,4 +41,4 @@ sed -i -e 's/^templatedir.*//' /etc/puppet/puppet.conf
 
 # Start standalone Puppet run
 puppet module install ./pkg/beta-profiles-${MODULE_VERSION}.tar.gz | style
-puppet apply --hiera_config=/vagrant/files/hiera.yaml /vagrant/tests/ntp.pp | style
+puppet apply --hiera_config=/vagrant/files/hiera.yaml /vagrant/tests/*.pp | style
