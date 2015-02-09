@@ -9,12 +9,8 @@
   "issues_url": "https://github.com/stevechambers/puppet-profile-dev/issues",
   "dependencies": [
     {
-      "name": "<AUTHOUR/MODULE>",
-      "version_requirement": ">= <VERSION_NUMBER>"
-    },
-    {
-      "name": "<AUTHOUR/MODULE>",
-      "version_requirement": ">= <VERSION_NUMBER>"
+      "name": "puppetlabs/postgresql",
+      "version_requirement": ">= 4.1.0"
     }
   ]
 }
