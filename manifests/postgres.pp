@@ -18,14 +18,17 @@
 
 class profiles::postgres (
 
-  $postgres_password = 'postgres',
-  $user = 'funky',
-  $db_password = 'funkytown'
+  $postgres_password = undef,
+  $db_name = undef,
+  $db_user = undef,
+  $db_password = undef,
+  $postgres_root = undef,
+  $postgres_data = undef
 
 ) {
 
 # create data dir
-file { '/postgresql/':
+file { $postgres_root:
   ensure => 'directory',
   owner  => 'root',
   group  => 'root',
@@ -38,7 +41,7 @@ class { 'postgresql::globals':
   encoding            => 'UTF8',
   # set data dir to non default
   locale              => 'en_GB.utf8',
-  datadir             => '/postgresql/data',
+  datadir             => "${postgres_root}${postgres_data}",
   needs_initdb        => true,
 } ->
 
@@ -51,9 +54,9 @@ class { 'postgresql::server':
 }
 
 # our database
-postgresql::server::db { 'mydb':
-  user     => $user,
-  password => postgresql_password($user, $db_password),
+postgresql::server::db { $db_name:
+  user     => $db_user,
+  password => postgresql_password($db_user, $db_password),
 } ->
 
 # Create ENV file
