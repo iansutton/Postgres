@@ -37,6 +37,7 @@ class { 'postgresql::globals':
   version             => '9.3',
   encoding            => 'UTF8',
   # set data dir to non default
+  locale              => 'en_GB.utf8',
   datadir             => '/postgresql/data',
   needs_initdb        => true,
 } ->

@@ -1,0 +1,6 @@
+---
+  profiles::postgres::postgres_password: 'postgresql'
+
+  profiles::postgres::user: 'punky'
+
+  profiles::postgres::db_password: 'punkytown'
