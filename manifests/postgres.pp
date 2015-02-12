@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 #Class profiles::postgres
+=======
+# Class profiles::postgres
+>>>>>>> 8c81ad4f5d53141547654e74c6c4f4729b740ef1
 # This class will install Postgres.
 #
 # Parameters: #Parameters accepted by the class
@@ -41,7 +45,11 @@ class { 'postgresql::globals':
   encoding            => 'UTF8',
   # set data dir to non default
   locale              => 'en_GB.utf8',
+<<<<<<< HEAD
   #datadir             => "${postgres_root}${postgres_data}",
+=======
+  datadir             => "${postgres_root}${postgres_data}",
+>>>>>>> 8c81ad4f5d53141547654e74c6c4f4729b740ef1
   needs_initdb        => true,
 } ->
 
