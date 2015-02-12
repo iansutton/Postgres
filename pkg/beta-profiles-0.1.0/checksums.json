@@ -1,0 +1,17 @@
+{
+  "Gemfile": "3424fbea22454eb36ba4b730aacaf343",
+  "Gemfile.lock": "cd151371c457c54d15e35fd488ddbe82",
+  "README.md": "ec4e2a5294400fc36e6b3da92954ccf2",
+  "Rakefile": "b8f9f1dea6acb523f75ff6a4a2222344",
+  "Vagrantfile": "0bf032ae1013f3652bc239ad49a9277b",
+  "build.sh": "524c81692ee3db46409f6479ba4fedd5",
+  "files/hiera.yaml": "0a4011c94f1979e5ac008ab625a6c6c4",
+  "files/hiera_data.md": "c9de3a9a4649550a8b0980ed24456567",
+  "files/postgres_test.yaml": "08e0cb1f9c5a93d30142dc9504ed9f72",
+  "install.sh": "3bb14c791afaa935afeae0b498a456a2",
+  "manifests/postgres.pp": "d64406e9fe5af4a2a8dab658000fb696",
+  "metadata.json": "8f34b07d3bcfc4f734648a5e1aef6ec4",
+  "spec/spec_helper.rb": "497586e3f3c367e3ade4d9c01f2fd9b3",
+  "tests/postgres.pp": "77969c2eca5d56c1551f39d3db3b743b",
+  "tests/tests.md": "da820fe2098a41af41b66f3642a66b89"
+}

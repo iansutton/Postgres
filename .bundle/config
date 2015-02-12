@@ -1,0 +1,5 @@
+---
+BUNDLE_FROZEN: '1'
+BUNDLE_PATH: /tmp
+BUNDLE_WITHOUT: development,puppet
+BUNDLE_DISABLE_SHARED_GEMS: '1'

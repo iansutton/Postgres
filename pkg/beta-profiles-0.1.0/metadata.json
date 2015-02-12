@@ -1,0 +1,16 @@
+{
+  "name": "beta-profiles",
+  "version": "0.1.0",
+  "author": "beta",
+  "summary": "Basic environment for developing and testing puppet profiles",
+  "license": "MIT License",
+  "source": "https://github.com/stevechambers/puppet-profile-dev",
+  "project_page": "https://github.com/stevechambers/puppet-profile-devt",
+  "issues_url": "https://github.com/stevechambers/puppet-profile-dev/issues",
+  "dependencies": [
+    {
+      "name": "puppetlabs/postgresql",
+      "version_requirement": ">= 4.1.0"
+    }
+  ]
+}

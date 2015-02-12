@@ -1,0 +1,12 @@
+---
+  profiles::postgres::postgres_password: 'postgres'
+
+  profiles::postgres::db_name: 'sysofrec'
+
+  profiles::postgres::db_user: 'sysofrec'
+
+  profiles::postgres::db_password: 'sysofrec'
+
+  profiles::postgres::postgres_root: '/postgresql'
+
+  profiles::postgres::postgres_data: '/data'

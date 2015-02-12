@@ -1,0 +1,8 @@
+:hierarchy:
+  - postgres_test
+
+:backends:
+  - yaml
+
+:yaml:
+  :datadir: /vagrant/files
